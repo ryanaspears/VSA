@@ -40,5 +40,11 @@ print "Your birthday is in " + month + " months and " + day + " days."
 """
 age = raw_input("How old are you?")
 age = int(age)
-if 13 < age > 17:
-    print"You can watch "
+if 13 <= age > 17:
+    print"You can watch G, PG, and PG-13 movies."
+elif 8 <= age < 13:
+    print"You can watch G and PG movies."
+elif age < 8:
+    print"You can only watch G movies."
+elif age >= 17:
+    print"You can watch G, PG, PG-13, and R movies."
