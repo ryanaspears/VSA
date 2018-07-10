@@ -10,10 +10,19 @@
 # you can immediately use it for your sum,
 # and then be done with the number just entered.
 
-#Example:
+# Example:
 # Enter a number to sum, or 0 to indicate you are finished: 4
 # Enter a number to sum, or 0 to indicate you are finished: 5
 # Enter a number to sum, or 0 to indicate you are finished: 2
 # Enter a number to sum, or 0 to indicate you are finished: 10
 # Enter a number to sum, or 0 to indicate you are finished: 0
-#The sum of your numbers is: 21
+# The sum of your numbers is: 21
+
+input_sum = 0
+var = 1
+while var != 0:
+    input1 = raw_input("Enter a number to sum, or 0 to indicate you are finished: ")
+    input_sum = int(input1) + input_sum
+    if int(input1) == 0:
+        var = 0
+        print"The sum of your numbers is: " + str(input_sum)
